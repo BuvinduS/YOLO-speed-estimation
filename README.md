@@ -91,6 +91,7 @@ The command given will be similar to the following:
 ```bash
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
+> Note: The exact CUDA version (`cuXXX`) depends on your GPU and system configuration.
 
 ### Option 2: Using ```requirements.txt```
 
@@ -133,6 +134,7 @@ The command given will be similar to the following:
 ```bash
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
+> Note: The exact CUDA version (`cuXXX`) depends on your GPU and system configuration.
 
 ## Running the Project
 
@@ -167,6 +169,6 @@ python YOLO_main.py
 
 - Improved calibration for real-world distance estimation
 
-- Refactoring using higher-level higher level computer vision libraries (ex:- ```supervision```)
-
+- Refactoring using higher-level computer vision libraries (e.g., `supervision`)
+  
 - Potential integration with IoT or edge deployment pipelines
