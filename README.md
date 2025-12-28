@@ -1,6 +1,6 @@
 # Car Detection & Speed Estimation using Computer Vision
 
-This project is a **computer vision prototype** for detecting car among other vehicles and estimating their speed from video footage using a single fixed camera.
+This project is a **computer vision prototype** for detecting cars among other vehicles and estimating their speed from video footage using a single fixed camera.
 
 It uses **YOLOv8** for object detection, **BoT-SORT** for multi-object tracking, and **OpenCV** for video processing. The system is designed as a proof-of-concept and is currently tested on publicly available footage.
 
