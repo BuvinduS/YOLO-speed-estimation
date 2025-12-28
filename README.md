@@ -136,6 +136,14 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 ```
 > Note: The exact CUDA version (`cuXXX`) depends on your GPU and system configuration.
 
+## Model Weights
+
+YOLOv8 model weights are **not included** in this repository.
+
+Ultralytics automatically downloads the required pretrained weights (e.g., `yolov8n.pt`) on first run to a specified directory given it exists.
+
+In the current folder structure the weights will be downloaded to ```YOLO-weights``` and be stored there.
+
 ## Running the Project
 
 Once all dependencies are installed cd to the root and run:
