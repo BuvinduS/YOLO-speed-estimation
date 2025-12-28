@@ -140,9 +140,11 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 
 YOLOv8 model weights are **not included** in this repository.
 
-Ultralytics automatically downloads the required pretrained weights (e.g., `yolov8n.pt`) on first run to a specified directory given it exists.
+Ultralytics automatically downloads the required pretrained weights (e.g., `yolov8m.pt`) on first run to a specified directory given it exists.
 
 In the current folder structure the weights will be downloaded to ```YOLO-weights``` and be stored there.
+
+Model m (`yolov8m.pt`) is recommended for a decent balance between detection accuracy and performance.
 
 ## Running the Project
 
