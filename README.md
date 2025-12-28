@@ -73,7 +73,7 @@ Activate the virtual environment (virtual environment must be activated before p
 
 3) Install the core dependencies:
 
-> ⚠️ Ensure a virtual environment is activated before installing dependencies, globally dependency installation is NOT recommended.
+> ⚠️ Ensure a virtual environment is activated before installing dependencies, global dependency installation is NOT recommended.
 
 ```bash
 pip install cvzone ultralytics
@@ -110,7 +110,7 @@ Activate the virtual environment (virtual environment must be activated before p
 
 3) Install the listed dependencies:
 
-> ⚠️ Ensure a virtual environment is activated before installing dependencies, globally dependency installation is NOT recommended.
+> ⚠️ Ensure a virtual environment is activated before installing dependencies, global dependency installation is NOT recommended.
 
 ```bash
 pip install -r requirements.txt
