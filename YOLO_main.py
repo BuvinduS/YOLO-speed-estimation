@@ -13,7 +13,7 @@ if not cap.isOpened():
     print("Video Error")
 
 # Chose the model YOLO-weight needed, if not already available will be downloaded to the path
-model = YOLO("YOLO-weights/yolov8n.pt")
+model = YOLO("YOLO-weights/yolov8m.pt")
 
 fps = cap.get(cv2.CAP_PROP_FPS)
 
