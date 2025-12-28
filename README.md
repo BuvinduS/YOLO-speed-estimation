@@ -67,8 +67,15 @@ cd YOLO-speed-estimation
 python -m venv .venv
 ```
 Activate the virtual environment (virtual environment must be activated before proceeding):
+
+(Windows)
 ```bash
 .venv\Scripts\activate.bat
+```
+(macOS / Linux)
+```bash
+
+source .venv/bin/activate
 ```
 
 3) Install the core dependencies:
@@ -105,8 +112,15 @@ cd YOLO-speed-estimation
 python -m venv .venv
 ```
 Activate the virtual environment (virtual environment must be activated before proceeding):
+
+(Windows)
 ```bash
 .venv\Scripts\activate.bat
+```
+(macOS / Linux)
+```bash
+
+source .venv/bin/activate
 ```
 
 3) Install the listed dependencies:
@@ -157,10 +171,8 @@ python YOLO_main.py
 **CUDA** is **strongly** recommended for usable performance.
 - AMD GPUs are not officially supported by PyTorch CUDA builds.
 
-- If you do not have an NVIDIA GPU, consider:
-
+If you do not have an NVIDIA GPU, consider:
 - Running in CPU mode (slow)
-
 - Using Google Colab or another cloud GPU environment
 
 ## Limitations
