@@ -55,8 +55,6 @@ In a real-world deployment, this distance would be accurately measured on-site.
 
 ## ⚙️ Installation
 
-### Option 1: Quick Setup (Recommended)
-
 1) Clone the repository:
 ```bash
 git clone https://github.com/BuvinduS/YOLO-speed-estimation
@@ -66,7 +64,7 @@ cd YOLO-speed-estimation
 ```bash
 python -m venv .venv
 ```
-Activate the virtual environment (virtual environment must be activated before proceeding):
+3) Activate the virtual environment (virtual environment must be activated before proceeding):
 
 (Windows)
 ```bash
@@ -78,68 +76,22 @@ Activate the virtual environment (virtual environment must be activated before p
 source .venv/bin/activate
 ```
 
-3) Install the core dependencies:
-
-> ⚠️ Ensure a virtual environment is activated before installing dependencies, global dependency installation is NOT recommended.
-
-```bash
-pip install cvzone ultralytics
-```
-Then install PyTorch with CUDA support by following the official PyTorch instructions:
-
-https://pytorch.org/get-started/locally/
-
-Make sure to select:
-- Your OS
-- pip
-- CUDA (do not select CPU-only unless you do not have a dedicated GPU)
-
-The command given will be similar to the following:
-```bash
-pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
-```
-> Note: The exact CUDA version (`cuXXX`) depends on your GPU and system configuration.
-
-If running the above command says that the libraries are already installed:
-- Run `pip uninstall torch torchvision torchaudio`
-- Re-run the pytorch command
-
-### Option 2: Using ```requirements.txt```
-
-1) Clone the repository:
-```bash
-git clone https://github.com/BuvinduS/YOLO-speed-estimation
-cd YOLO-speed-estimation
-```
-2) Create a virtual environment (only needed to run once):
-```bash
-python -m venv .venv
-```
-Activate the virtual environment (virtual environment must be activated before proceeding):
-
-(Windows)
-```bash
-.venv\Scripts\activate.bat
-```
-(macOS / Linux)
-```bash
-
-source .venv/bin/activate
-```
-
-3) Install the listed dependencies:
+4) Install the dependencies using requirements.txt :
 
 > ⚠️ Ensure a virtual environment is activated before installing dependencies, global dependency installation is NOT recommended.
 
 ```bash
 pip install -r requirements.txt
 ```
-Then reinstall PyTorch with CUDA support (pip installs CPU-only versions by default):
+
+> Any warnings about dependencies ending with `cuXXX` not being installed can be ignored. These dependecies need to be installed through the PyTorch website
+
+5) Uninstall any CPU-only versions of PyTorch (`pip` might install CPU-only versions by default):
 ```bash
 pip uninstall torch torchvision torchaudio
 ```
 
-Then install PyTorch with CUDA support by following the official PyTorch instructions:
+6) Install PyTorch with CUDA support by following the official PyTorch instructions:
 
 https://pytorch.org/get-started/locally/
 
@@ -153,6 +105,8 @@ The command given will be similar to the following:
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ```
 > Note: The exact CUDA version (`cuXXX`) depends on your GPU and system configuration.
+
+> To check the CUDA version of a Nvidia GPU run `nvidia-smi` in a terminal.
 
 ## Model Weights
 
