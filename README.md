@@ -100,6 +100,10 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 ```
 > Note: The exact CUDA version (`cuXXX`) depends on your GPU and system configuration.
 
+If running the above command says that the libraries are already installed:
+- Run `pip uninstall torch torchvision torchaudio`
+- Re-run the pytorch command
+
 ### Option 2: Using ```requirements.txt```
 
 1) Clone the repository:
