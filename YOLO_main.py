@@ -130,7 +130,7 @@ while True:
                     dt = (line2_times[track_id] - line1_times[track_id]) / fps
                     if dt > 0:
                         speed_mps = LINE_DISTANCE_IN_METERS / dt
-                        speed_by_id[track_id] = round((speed_mps * (3600/1000)), 3) # in kmph
+                        speed_by_id[track_id] = round((speed_mps * (3600/1000)), 1) # in kmph
 
             prev_centers[track_id] = cY
 
@@ -148,7 +148,7 @@ while True:
             if track_id in speed_by_id:
                 speed_kmph = speed_by_id[track_id]
                 instantaneous_val_colorR = (0, 255, 0)
-                cvzone.putTextRect(img, f'{speed_by_id[track_id]} kmph', (max(0, x1), max(35, y1)), scale=1, thickness=1, offset=10, colorR = (0,0,0), colorT=(0,0,255))
+                cvzone.putTextRect(img, f'{speed_by_id[track_id]} kmph', (max(0, x1), max(35, y1)), scale=1.3, thickness=2, offset=10, colorR = (0,0,0), colorT=(255,255,255))
 
             # Instantaneous speed
             #cvzone.putTextRect(img, f'{speed_kmph:.1f}', (max(0, x2), max(35, y2)), scale=1, thickness=1, offset=10, colorR=instantaneous_val_colorR, colorT=instantaneous_val_colorT)
