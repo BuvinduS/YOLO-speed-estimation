@@ -25,7 +25,7 @@ Speed is estimated using a **two-line approach**:
 - Timing ends when the vehicle crosses the **blue line**
 - Vehicles are counted when they cross the **green line**
 
-The distance between the two speed-measurement lines is currently **assumed to be 15 meters**.  
+The distance between the two speed-measurement lines is currently **assumed to be 20 meters**.  
 In a real-world deployment, this distance would be accurately measured on-site.
 
 > ⚠️ Because the system relies on a single camera view, factors such as camera placement, road curvature, and perspective distortion mean that the estimated speeds are **approximations** and remain video-dependent.
