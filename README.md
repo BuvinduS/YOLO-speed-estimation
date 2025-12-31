@@ -84,7 +84,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> Any warnings about dependencies ending with `cuXXX` not being installed can be ignored. These dependecies need to be installed through the PyTorch website
+> This might take a while as the packages are relatively large in size.
+
+> Any warnings about dependencies ending with `cuXXX` not being installed can be ignored. These dependencies need to be installed through the PyTorch website
 
 5) Uninstall any CPU-only versions of PyTorch (`pip` might install CPU-only versions by default):
 ```bash
@@ -114,16 +116,18 @@ YOLOv8 model weights are **not included** in this repository.
 
 Ultralytics automatically downloads the required pretrained weights (e.g., `yolov8m.pt`) on first run to a specified directory given it exists.
 
-In the current folder structure the weights will be downloaded to ```YOLO-weights``` and be stored there.
+This repository includes a `YOLO-weights/` folder to ensure weights are downloaded and stored in a predictable location.
 
 Model m (`yolov8m.pt`) is recommended for a decent balance between detection accuracy and performance.
 
 ## Running the Project
 
-Once all dependencies are installed cd to the root and run:
+Once all dependencies are installed, navigate to the project root and run:
 ```bash
 python YOLO_main.py
 ```
+
+> The first run may take longer as model weights are downloaded automatically.
 
 ## ⚠️ Hardware & CUDA Notes
 **CUDA** is **strongly** recommended for usable performance.
