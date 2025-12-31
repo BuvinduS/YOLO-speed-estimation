@@ -84,7 +84,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> This might take a while as the packages are relatively large in size.
+> This might take a while as the packages are relatively large.
 
 > Any warnings about dependencies ending with `cuXXX` not being installed can be ignored. These dependencies need to be installed through the PyTorch website
 
@@ -108,7 +108,7 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 ```
 > Note: The exact CUDA version (`cuXXX`) depends on your GPU and system configuration.
 
-> To check the CUDA version of a Nvidia GPU run `nvidia-smi` in a terminal.
+> To check the CUDA version of an Nvidia GPU run `nvidia-smi` in a terminal.
 
 ## Model Weights
 
